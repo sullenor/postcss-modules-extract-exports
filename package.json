@@ -1,0 +1,31 @@
+{
+  "name": "postcss-modules-extract-exports",
+  "version": "1.0.0",
+  "description": "Extracts exports that are represented in CSS",
+  "main": "index.js",
+  "dependencies": {
+    "postcss": "^5.0.19"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "test": "npm run test:node",
+    "test:node": "$npm_package_scripts_test_unit",
+    "test:unit": "mocha --require test/setup.js --ui tdd test/index.js --harmony_destructuring --use_strict"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sullenor/postcss-modules-extract-exports.git"
+  },
+  "keywords": [
+    "css-modules",
+    "exports"
+  ],
+  "author": "Alexey Litvinov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sullenor/postcss-modules-extract-exports/issues"
+  },
+  "homepage": "https://github.com/sullenor/postcss-modules-extract-exports#readme"
+}
