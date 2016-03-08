@@ -20,7 +20,7 @@
     "prepublish": "in-publish && npm run -s build || in-install",
     "build": "babel index.js --out-file index.js",
     "test": "npm run test:babel",
-    "test:babel": "$npm_package_scripts_test_unit --compilers js:babel-register",
+    "test:babel": "mocha --compilers js:babel-register --require test/setup.js --ui tdd test/index.js",
     "test:node": "$npm_package_scripts_test_unit",
     "test:unit": "mocha --require test/setup.js --ui tdd test/index.js --harmony_destructuring --use_strict"
   },
