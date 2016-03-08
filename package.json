@@ -27,7 +27,9 @@
   },
   "keywords": [
     "css-modules",
-    "exports"
+    "postcss",
+    "css",
+    "postcss-plugin"
   ],
   "author": "Alexey Litvinov",
   "license": "MIT",
