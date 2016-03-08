@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Extracts ICSS exports that are represented in CSS",
   "main": "index.js",
+  "engines": {
+    "node": ">=0.12"
+  },
   "dependencies": {
     "postcss": "^5.0.19"
   },
