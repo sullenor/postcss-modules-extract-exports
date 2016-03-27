@@ -26,11 +26,12 @@ const postcss = require('postcss');
 const LocalByDefault = require('postcss-modules-local-by-default');
 const ExtractImports = require('postcss-modules-extract-imports');
 const Scope = require('postcss-modules-scope');
+const ExtractExports = require('postcss-modules-extract-exports');
 
 const css = '.continueButton\n{\n  color: green;\n}';
 const filepath = '..'; // somefile
 
-const tokens = postcss([LocalByDefault, ExtractImports, Scope])
+const tokens = postcss([LocalByDefault, ExtractImports, Scope, ExtractExports])
   .process(css, {from: filepath})
   .root.tokens;
 // => {
